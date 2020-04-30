@@ -4,7 +4,7 @@ In this coding challenge, you will be creating a simple grocery-list web app cal
 
 ## Getting Started
 
-Git clone this repository, then type ```npm install``` to install all the packages, and ```npm start``` to start on localhost.
+Git clone this repository, and ```cd``` into the shopper folder. Then type ```npm install``` to install all the packages, and ```npm start``` to start on localhost.
 
 ## Technical Details
 
@@ -34,6 +34,6 @@ If you finish early, feel free to add extra features that you think would improv
 
 ## Once You're Finished
 
-We would recommend you branch off your changes into a new branch via ```git branch [BRANCH NAME]``` and ```git checkout [BRANCH NAME]```. You can submit your branch via ```git push origin [BRANCH NAME]```.
+Please DO NOT push to master; instead, branch your changes into a new branch via ```git branch [BRANCH NAME]``` and ```git checkout [BRANCH NAME]```, and submit your branch via ```git push origin [BRANCH NAME]```.
 
 Have fun--we look forward to seeing your work!
