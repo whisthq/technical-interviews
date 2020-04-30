@@ -23,37 +23,18 @@ class PageHome extends Component {
     window.removeEventListener('resize', this.updateWindowDimensions)
   }
 
-  addItemToList = () => {
-    this.props.dispatch(storeGroceryItem(this.state.currentGroceryItem))
-  }
-
-  changeCurrentGroceryItem = (evt) => {
-    this.setState({currentGroceryItem: evt.target.value})
-  }
-
   render() {
     let modalClose = () => this.setState({ modalShow: false })
     if (this.state.width > 700 && this.state.modalShow) {
       modalClose()
     }
     return (
-      <Container>
-        <div>
-          <div>
-            Enter a grocery Item Here:
-          </div>
-          <Button onClick = {this.addItemToList}>
-            Submit
-          </Button>
-          <input type = "text" onChange = {this.changeCurrentGroceryItem} placeholder = "Grocery Item Here"/>
+      <Container style = {{paddingTop: 50}}>
+        <div style = {{textAlign: 'center', fontSize: 40, fontWeight: 'bold'}}>
+          YOUR CODE HERE
         </div>
-        <div>
-          <div>
-            Grocery List 
-          </div>
-          {this.props.groceryItems}
-          <div>
-          </div>
+        <div style = {{marginTop: 15, textAlign: 'center'}}>
+          Good luck and have fun!
         </div>
       </Container>
     )

@@ -7,7 +7,7 @@ export default function(state = DEFAULT, action) {
   	case CartAction.STORE_GROCERY_ITEM:
   		return {
   			...state,
-  			groceryItems: [...state.groceryItems, action.item]
+  			groceryItems: state.groceryItems ? [...state.groceryItems, action.item] : []
   		}
     default:
       return state
