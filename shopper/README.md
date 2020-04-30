@@ -17,6 +17,8 @@ Concretely, the features are:
 3. Ability to apply labels to grocery items. In the demo, we can mark grocery items as "bought" or "not available." This, should be done via Redux actions/reducers.
 4. Ability to delete grocery items from the list. This should be done via Redux actions/reducers.
 
+The files we expect you to modify are src/components/PageHomeNew/NewHome.js for the home page rendering; src/components/actions/index.js for actions; src/components/reducers/cart_reducer.js for the reducer.
+
 ## How You Will Be Assessed
 
 Your solution will be assessed using three main criteria: functionality, design, and user experience. 
