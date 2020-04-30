@@ -20,7 +20,7 @@ These features are:
 
 Your solution will be assessed using three main criteria: functionality, design, and user experience. 
 
-1.Functionality measures how well your code works--are all the features implemented, and are there any obvious bugs? 
+1. Functionality measures how well your code works--are all the features implemented, and are there any obvious bugs? 
 2. Design measures how aesthetically pleasing your final product is. You may have noticed that the above demo looked pretty horrible; this is done intentionally, so as to not influence your design decisions. Since this is a timed challenge, we don't expect the final product to look like the Stripe dashboard, but we are looking to develop a sense of what your design + overall CSS abilities might be (although we understand that good designs are difficult to implement under time pressure).
 3. User experience measures how easy it is to use the website. Responsive components (i.e. components that react to user behavior, for instance, notifications that something has been done successfully) are heavily encouraged.
 
