@@ -4,12 +4,13 @@ In this coding challenge, you will be creating a simple grocery-list web app cal
 
 ## Getting Started
 
+Git clone this repository, then type ```npm install``` to install all the packages, and ```npm start``` to start on localhost.
 
 ## Technical Details
 
-You will have three hours to build the grocery-list app. A demo of all the minimum features we would expect this app to have is here: DEMO HERE.
+You will have three hours to build a grocery-list app. A demo of the minimum features we would expect this app to have is here: https://shopper-solution.herokuapp.com/. (NOTE: We do not expect your implementation to look like this, this is just to demonstrate the functionality).
 
-These features are:
+Concretely, the features are:
 
 1. Ability to manually enter grocery items. We don't require that you do spell-checking here, but we do require that you do this via Redux actions/reducers. (HINT: An example action called storeGroceryItem has already been implemented and imported for you in src/components/PageHomeNew/NewHome.js).
 2. Ability to view all your stored grocery items.
@@ -20,8 +21,19 @@ These features are:
 
 Your solution will be assessed using three main criteria: functionality, design, and user experience. 
 
-1.Functionality measures how well your code works--are all the features implemented, and are there any obvious bugs? 
-2. Design measures how aesthetically pleasing your final product is. You may have noticed that the above demo looked pretty horrible; this is done intentionally, so as to not influence your design decisions. Since this is a timed challenge, we don't expect the final product to look like the Stripe dashboard, but we are looking to develop a sense of what your design + overall CSS abilities might be (although we understand that good designs are difficult to implement under time pressure).
+1. Functionality measures how well your code works--are all the features implemented, and are there any obvious bugs? 
+2. Design measures how aesthetically pleasing your final product is. You may have noticed that the above demo looked very bare-boned; this is done intentionally, so as to not influence your design decisions. Since this is a timed challenge, we don't expect the final product to look like the Stripe dashboard, but we are looking to develop a sense of what your design + overall CSS abilities might be (although we understand that good designs are difficult to implement under time pressure).
 3. User experience measures how easy it is to use the website. Responsive components (i.e. components that react to user behavior, for instance, notifications that something has been done successfully) are heavily encouraged.
 
 Have fun--we look forward to seeing your work!
+
+## Bonus Points
+
+If you finish early, feel free to add extra features that you think would improve the web app. A few suggestions are:
+
+1. Add a "quantity" field for each grocery item.
+2. Redux states disappear if you clear the browser cookies. A database is a better way to store grocery items, if you can spin up a backend quickly. API calls should be handled in sagas/index.js.
+
+## Once You're Finished
+
+We would recommend you branch off your changes into a new branch via ```git branch [BRANCH NAME]``` and ```git checkout [BRANCH NAME]```. You can submit your branch via ```git push origin [BRANCH NAME]```.
