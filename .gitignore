@@ -2,7 +2,10 @@
 
 # dependencies
 /node_modules
+<<<<<<< HEAD
 node_modules/
+=======
+>>>>>>> 641d8fc61c732ada8f5437e088c14eb035dc9128
 /.pnp
 .pnp.js
 
@@ -21,4 +24,8 @@ node_modules/
 
 npm-debug.log*
 yarn-debug.log*
+<<<<<<< HEAD
 yarn-error.log*
+=======
+yarn-error.log*
+>>>>>>> 641d8fc61c732ada8f5437e088c14eb035dc9128
