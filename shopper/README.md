@@ -8,7 +8,7 @@ Git clone this repository, and ```cd``` into the shopper folder. Then type ```np
 
 ## Technical Details
 
-You will have three hours to build a grocery-list app. A demo of the minimum features we would expect this app to have is here: https://shopper-solution.herokuapp.com/. (NOTE: We do not expect your implementation to look like this, this is just to demonstrate the functionality).
+You will have three hours to build a grocery-list app. A demo of the minimum features we would expect this app to have is here: https://shopper-solution.herokuapp.com/. (Give it a minute to load, it's on the free Heroku plan). (NOTE: We do not expect your implementation to look like this, this is just to demonstrate the functionality).
 
 Concretely, the features are:
 
