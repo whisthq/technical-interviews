@@ -6,6 +6,10 @@ This repository contains the questions to the different technical interview ques
 
 The associated interview solutions repository is at: https://github.com/fractalcomputers/interview-solutions
 
+## List of Available Technical Interview Questions
+- Shopper: Build a basic website with React/Redux, JS, HTML-CSS, Python
+- Broken-Stun: Debug computer networking bugs in C
+
 ## Administering a Technical Interview
 
 When administering a technical interview, please select the question you want from this repository, and add it to a brand new, private Fractal repo, and give access to the interviewe. Make sure to remove access at the end of the interview period, and to eventually delete the temporary repository once the interview decisions have been processed and released.
