@@ -39,27 +39,21 @@ This file benchmarks your implementation. You should not make significant change
 
 This is a GNU Makefile. You should not need to edit this. To compile everything you can run `make` in your command line. If you decide to tackle this challenge on Windows, you will need to make your own Makefile. We suggest following the same format this one, and compiling with `nmake` (assuming you have Visual Studio Desktop Development SDK).
 
-
-
-
-
-
 ### Milestone 1
 
 In this milestone you will implement a static hashtable. It is static in the sense that you know ahead of time the expected number of elements to be inserted in the hashtable and can therefore allocate an appropriately sized hashtable for good performance. You may use external sources to figure out what an optimal size is. 
 
 ### Milestone 2
-In this milestone you will modify your code from milestone 1 so that the hashtable is dynamically resized as it fills up. The hash table should be made larger as more elements are inserted. You do not need to decrease the size of the hashtable if elements are removed. You are allowed to use external resources to figure out a good policy for when to resize. Please provide links to any resources you use. The resizing should be automatic, the user should not need to call a function to resize the hashtable. Your solution for this milestone does not need to be optimal, a naive solution will suffice. 
+
+In this milestone you will modify your code from milestone 1 so that the hashtable is dynamically resized as it fills up. The hash table should be made larger as more elements are inserted. You do not need to decrease the size of the hashtable if elements are removed. You are allowed to use external resources to figure out a good policy for when to resize. Please provide links to any resources you use. The resizing should be automatic; the user should not need to call a function to resize the hashtable. Your solution for this milestone does not need to be optimal, a naive solution will suffice.
 
 ### Milestone 3
+
 In this milestone you will improve on your design from milestone 2. A naive solution from milestone 2 likely has a lot of extra data movement. Please sketch an improved design in a new markdown file, making sure to include your reasoning and any trade offs you have to make. We would like to see your thinking clearly communicated, but if you have time you are also welcome to implement your design. As a hint, think about the keys of your table. 
 
-
-
-
-
-
 ## How You Will Be Assessed
+
+
 
 
 
