@@ -2,6 +2,8 @@
 
 In this coding challenge, you will be implementing a resizeable hashtable in C. Please fully read this document before starting the challenge. The later milestones will depend on the code you write in the first milestone and certain design decisions may make your life harder later. 
 
+Please record your thoughts as you complete this challenge in a new markdown file (don't forget to git add it). This is where you will link to external sources you used, discuss the performance of milestone 2 and sketch out your design for milestone 3. 
+
 ## Getting Started
 
 Git clone this repository, and ```cd``` into the hashtable folder. 
@@ -42,7 +44,7 @@ In this milestone you will implement a static hashtable. It is static in the sen
 In this milestone you will modify your code from milestone 1 so that the hashtable is dynamically resized as it fills up. The hash table should be made larger as more elements are inserted. You do not need to decrease the size of the hashtable if elements are removed. You are allowed to use external resources to figure out a good policy for when to resize. Please provide links to any resources you use. The resizing should be automatic, the user should not need to call a function to resize the hashtable. Your solution for this milestone does not need to be optimal, a naive solution will suffice. 
 
 ### Milestone 3
-In this milestone you will improve on your design from milestone 2. A naive solution from milestone 2 likely has a lot of extra data movement. Please sketch an improved design in a new markdown file, making sure to include your reasoning and any trade offs you have to make. We would like to see your thinking clearly communicated, but if you have time you are also welcome to implement your design. As a hint, think about the keys of your table. 
+In this milestone you will improve on your design from milestone 2. A naive solution from milestone 2 likely has a lot of extra data movement. Please sketch an improved design in the new markdown file, making sure to include your reasoning and any trade offs you have to make. We would like to see your thinking clearly communicated, but if you have time you are also welcome to implement your design. As a hint, think about the keys of your table. 
 
 
 
@@ -51,12 +53,7 @@ In this milestone you will improve on your design from milestone 2. A naive solu
 
 ## How You Will Be Assessed
 
-
-
-
-The timer is meant for us to understand context, you shouldn't be stressed by it, or feel that you need to find all the bugs within a specific timeframe.
-
-You will be assessed on the quality and accuracy of your comments, and on the engineering style you demonstrate through them.
+For milestone 1 we are looking for clean readable code that passes the tests. We want to see your ability to write proficiently in C. For milestone 2 we also want to see clean code, but we also want to read your thoughts and analysis on why it may not be an optimal solution. For milestone 3 we are most interested in how you think about design and justify trade offs. If you have time to code your solution for milestone 3 that is great, but it is not required. If you are feeling rushed we would rather you spend more time clearly communicating your design than trying to get your code to work.  
 
 ## Once You're Finished
 
