@@ -1,10 +1,25 @@
-## Hashtable Overview
-Please fully read this document before starting the challenge. The later milestones will depend on the code you write in the first milestone and certain design decisions may make your life harder later. 
+## Overview
+
+In this coding challenge, you will be implementing a resizeable hashtable in C. Please fully read this document before starting the challenge. The later milestones will depend on the code you write in the first milestone and certain design decisions may make your life harder later. 
+
+## Getting Started
+
+Git clone this repository, and ```cd``` into the hashtable folder. 
+
+If you are running a Unix distribution (MacOS or Linux), you can compile the code by typing ```make```. If you are running Windows, we recommend you install Windows Subsystem for Linux (WSL) to compile the code. You are free to modify the code to make it compile on Windows if you would like to, but that may require some time to create your own makefile/use Visual Studio and adapt the `#include`.
+
+## Technical Details
+
+You have 120 minutes to complete this assignment. This challenge has three milestones. The first is to implement a basic hash table. It is basic in the sense that it does not need to adaptively resize to the number of elements in the hashtable. The second is to extend this implementation to support resizing using a simple method. The third is to design and, time permitting, to implement a better dynamically sized hash table. Please commit at minimum at the end of each milestone with a clear commit message. You are encouraged to commit more often, but do not have to. 
+
+To keep things a little simpler, both the keys and the values of the hashtable are standard C99 `int`. 
 
 
-This challenge has three milestones. The first is to implement a basic hash table. It is basic in the sense that it does not need to adaptively resize to the number of elements in the hashtable. The second is to extend this implementation to support resizing using a simple method. The third is to design and, time permitting, to implement a better dynamically sized hash table. Please commit at minimum at the end of each milestone with a clear commit message. You are encouraged to commit more often, but do not have to. 
 
-To keep things a little simpler, both the keys and the values of the hashtable are ints. 
+
+
+
+
 
 ### Files
 ##### hash_table.h
@@ -28,3 +43,27 @@ In this milestone you will modify your code from milestone 1 so that the hashtab
 
 ### Milestone 3
 In this milestone you will improve on your design from milestone 2. A naive solution from milestone 2 likely has a lot of extra data movement. Please sketch an improved design in a new markdown file, making sure to include your reasoning and any trade offs you have to make. We would like to see your thinking clearly communicated, but if you have time you are also welcome to implement your design. As a hint, think about the keys of your table. 
+
+
+
+
+
+
+## How You Will Be Assessed
+
+
+
+
+The timer is meant for us to understand context, you shouldn't be stressed by it, or feel that you need to find all the bugs within a specific timeframe.
+
+You will be assessed on the quality and accuracy of your comments, and on the engineering style you demonstrate through them.
+
+## Once You're Finished
+
+Please DO NOT push to master; instead, branch your code changes and notes into a new branch via ```git branch [BRANCH NAME]``` and ```git checkout [BRANCH NAME]```, and submit your branch via ```git push origin [BRANCH NAME]```.
+
+Have fun--we look forward to seeing your work!
+
+
+
+

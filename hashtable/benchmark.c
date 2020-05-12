@@ -11,10 +11,7 @@
 // up. Compile and run it in the command line by typing:
 // make benchmark; ./benchmark
 
-
-
 int main(void) {
-
   hashtable* ht = NULL;
   int num_tests = 10000000;
   assert(allocate(&ht, num_tests) == 0);

@@ -11,7 +11,6 @@
 // make test; ./test
 
 int main(void) {
-
   hashtable* ht = NULL;
   int num_tests = 20;
   int failure = allocate(&ht, num_tests);

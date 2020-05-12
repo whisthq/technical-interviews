@@ -1,7 +1,5 @@
 #include "hash_table.h"
 
-
-
 // A basic hash function, no need to modify or implement your own. 
 unsigned int hash(keyType x) {
     x = ((x >> 16) ^ x) * 0x45d9f3b;
@@ -9,7 +7,6 @@ unsigned int hash(keyType x) {
     x = (x >> 16) ^ x;
     return x;
 }
-
 
 // Initialize the components of a hashtable.
 // The size parameter is the expected number of elements to be inserted.
@@ -34,7 +31,7 @@ int put(hashtable* ht, keyType key, valType value) {
 // the number of matching entries using the num_results pointer. If the value of num_results is greater than
 // num_values, the caller can invoke this function again (with a larger buffer)
 // to get values that it missed during the first call. 
-int get(hashtable* ht, keyType key, valType *values, int num_values, int* num_results) {
+int get(hashtable* ht, keyType key, valType* values, int num_values, int* num_results) {
     (void) ht;
     (void) key;
     (void) values;

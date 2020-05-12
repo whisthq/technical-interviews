@@ -5,7 +5,6 @@
 
 // This is where you can implement your own tests for the hash table
 int main(void) {
-
   hashtable *ht = NULL;
   int size = 10;
   allocate(&ht, size);
