@@ -9,6 +9,7 @@ The associated interview solutions repository is at: https://github.com/fractalc
 ## List of Available Technical Interview Questions
 - Shopper: Build a basic website with React/Redux, JS, HTML-CSS, Python
 - Broken-Stun: Debug computer networking bugs in C
+- Hashtable: Implement a resizeable hashtable in C
 
 ## Administering a Technical Interview
 
