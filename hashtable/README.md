@@ -1,8 +1,6 @@
 ## Overview
 
-In this coding challenge, you will be implementing a resizeable hashtable in C. Please fully read this document before starting the challenge. The later milestones will depend on the code you write in the first milestone and certain design decisions may make your life harder later. 
-
-Please record your thoughts as you complete this challenge in a new markdown file (don't forget to git add it). This is where you will link to external sources you used, discuss the performance of milestone 2 and sketch out your design for milestone 3. 
+In this coding challenge, you will be implementing a resizeable hashtable in C. Please fully read this document in its entirety before starting the challenge. The later milestones will depend on the code you write in the first milestone and certain design decisions may make your life harder later, make sure to think about the future, in the present.
 
 ## Getting Started
 
@@ -12,7 +10,7 @@ If you are running a Unix distribution (MacOS or Linux), you can compile the cod
 
 ## Technical Details
 
-You have 120 minutes to complete this assignment. This challenge has three milestones. The first is to implement a basic hash table. It is basic in the sense that it does not need to adaptively resize to the number of elements in the hashtable. The second is to extend this implementation to support resizing using a simple method. The third is to design and, time permitting, to implement a better dynamically sized hash table. Please commit at minimum at the end of each milestone with a clear commit message. You are encouraged to commit more often, but do not have to. 
+You have 120 minutes to complete this assignment. This challenge has three milestones. The first is to implement a basic hash table. It is basic in the sense that it does not need to adaptively resize to the number of elements in the hashtable. The second is to extend this implementation to support resizing using a simple method. Please commit at minimum at the end of each milestone with a clear commit message such as "Milestone #X Complete". You are encouraged to commit more often, but do not have to. Write your solutions as if it would be the final code that would occur in a production setting. Proper organization, proper comments and explanations, etc. 
 
 To keep things a little simpler, both the keys and the values of the hashtable are standard C99 `int`. 
 
@@ -43,21 +41,19 @@ This is a GNU Makefile. You should not need to edit this. To compile everything 
 
 ### Milestone 1
 
-In this milestone you will implement a static hashtable. It is static in the sense that you know ahead of time the expected number of elements to be inserted in the hashtable and can therefore allocate an appropriately sized hashtable for good performance. You may use external sources to figure out what an optimal size is. 
+In this milestone you will implement a static hashtable. It is static in the sense that you know ahead of time the expected number of elements to be inserted in the hashtable and can therefore allocate an appropriately sized hashtable for good performance. For reference, the optimal size of a hashtable is 30% larger than the number of keys that intend to be placed in that hashtable.
 
 ### Milestone 2
 
-In this milestone you will modify your code from milestone 1 so that the hashtable is dynamically resized as it fills up. The hash table should be made larger as more elements are inserted. You do not need to decrease the size of the hashtable if elements are removed. You are allowed to use external resources to figure out a good policy for when to resize. Please provide links to any resources you use. The resizing should be automatic; the user should not need to call a function to resize the hashtable. Your solution for this milestone does not need to be optimal, a naive solution will suffice.
+In this milestone you will modify your code from milestone 1 so that the hashtable is dynamically resized as it fills up. The hash table should be made larger as more elements are inserted. You do not need to decrease the size of the hashtable if elements are removed. You are allowed to use external resources to figure out a good policy for when to resize. Please provide links to any resources you use. The resizing should be automatic; the user should not need to call a function to resize the hashtable. Your solution must run in O(1) time amortized, and that is the only requirement for the algorithm itself. 
 
 ### Milestone 3
 
-
-In this milestone you will improve on your design from milestone 2. A naive solution from milestone 2 likely has a lot of extra data movement. Please sketch an improved design in a new markdown file, making sure to include your reasoning and any trade offs you have to make. We would like to see your thinking clearly communicated, but if you have time you are also welcome to implement your design. As a hint, think about the keys of your table. 
-
+Will be discussed after the coding portion.
 
 ## How You Will Be Assessed
 
-For milestone 1 we are looking for clean readable code that passes the tests. We want to see your ability to write proficiently in C. For milestone 2 we also want to see clean code, but we also want to read your thoughts and analysis on why it may not be an optimal solution. For milestone 3 we are most interested in how you think about design and justify trade offs. If you have time to code your solution for milestone 3 that is great, but it is not required. If you are feeling rushed we would rather you spend more time clearly communicating your design than trying to get your code to work.  
+For milestone 1 we are looking for clean readable code that passes the tests. We want to see your ability to write proficiently in C. For milestone 2 we also want to see clean code. If you are feeling rushed we would rather you spend more time clearly communicating your design than trying to get your code to work.  
 
 
 ## Once You're Finished
