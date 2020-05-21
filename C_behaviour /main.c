@@ -26,7 +26,7 @@ int* q2(void){
 int* q3(void){
     int* x = malloc(sizeof(int) * 4);
 
-    for(int i =0; i<5; i++){
+    for(size_t i =0; i<5; i++){
         int *p = x + i;
         *p = i; 
     }
@@ -46,12 +46,42 @@ int q4(void){
     return x>y ? 1 : 0;
 }
 
+int q5(void){
+    static int x;
+    x = x + 10;
 
+    return x;
+}
+
+
+int q6(void){
+    printf("Size of int: %ld\n", sizeof(int));
+    printf("Size of int pointer: %ld\n", sizeof(int*));
+
+    return 0;
+}
+
+
+typedef struct my_struct {
+  int a;
+  int* b;
+} my_struct;
+
+
+int q7(void){
+    printf("size of my struct: %ld\n", sizeof(my_struct));
+    return 0;
+
+}
 
 
 int main(void) {
     // printf("q1 returns: %d \n", q1());
     // printf("q2 returns: %d \n", *q2());
-    q3();
+    printf("q4 returns: %d \n", q4());
+    printf("q5 first run returns: %d \n", q5());
+    printf("q5 second run returns: %d \n", q5());\
+    q6();
+    q7();
     return 0;
 }
