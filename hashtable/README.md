@@ -14,6 +14,8 @@ If you are running a Unix distribution (MacOS or Linux), you can compile the cod
 
 You have 50 minutes to work on this. This challenge has three milestones. The first is to implement a basic hash table. It is basic in the sense that it does not need to adaptively resize to the number of elements in the hashtable. The second is to extend this implementation to support resizing using any O(1) amortized method. The third milestone will be discussed afterwards. Please commit at minimum at the end of each milestone with a clear commit message such as "Milestone #X Complete". You are encouraged to commit more often, but do not have to. Write your solutions as if it would be the final code that would occur in a production setting. Proper organization, proper comments and explanations, etc. 
 
+NOTE: You do not need to implement a dynamic array or a linked list for collisions. Instead, simply make a header file for such a datastructure, and then use the header file's functions in your code.
+
 To keep things a little simpler, both the keys and the values of the hashtable are standard C99 `int`. 
 
 ### Files
@@ -55,7 +57,7 @@ Will be discussed after the coding portion.
 
 ## How You Will Be Assessed
 
-For milestone 1 we are looking for clean readable code that passes the tests. We want to see your ability to write proficiently in C. For milestone 2 we also want to see clean code. If you are feeling rushed we would rather you spend more time clearly communicating your design than trying to get your code to work. Your code does not need to compile and work correctly, we will only be reading the code during the assessment. We would rather you implement half of the functions with good, solid, and clean code, than try to get a minimal viable project somewhat working.
+For milestone 1 we are looking for clean readable code that passes the tests. We want to see your ability to write proficiently in C. For milestone 2 we also want to see clean code. If you are feeling rushed we would rather you spend more time clearly communicating your design than trying to get your code to work. Your code does not need to compile and work correctly, we will only be reading the code during the assessment. We would rather you implement half of the functions with good, solid, and clean code, than try to get a minimal viable project somewhat working. The quality of any additional header files that you used will still be looked at (Such as the header file for your collision-handling datastructure).
 
 ## Once You're Finished
 
