@@ -6,11 +6,13 @@ In this coding challenge, you will be implementing a resizeable hashtable in C. 
 
 Git clone this repository, and ```cd``` into the hashtable folder. 
 
-If you are running a Unix distribution (MacOS or Linux), you can compile the code by typing ```make```. If you are running Windows, we recommend you install Windows Subsystem for Linux (WSL) to compile the code. You are free to modify the code to make it compile on Windows if you would like to, but that may require some time to create your own makefile/use Visual Studio and adapt the `#include`.
+NOTE: You do not need to compile this code to complete the assignment. If you want to anyway, then read the following:
+
+If you are running a Unix distribution (MacOS or Linux), you can compile the code by typing ```make main```, ```make test```, or ```make benchmark```. If you are running Windows, we recommend you install Windows Subsystem for Linux (WSL) to compile the code. You are free to modify the code to make it compile on Windows if you would like to, but that may require some time to create your own makefile/use Visual Studio and adapt the `#include`.
 
 ## Technical Details
 
-You have 120 minutes to complete this assignment. This challenge has three milestones. The first is to implement a basic hash table. It is basic in the sense that it does not need to adaptively resize to the number of elements in the hashtable. The second is to extend this implementation to support resizing using a simple method. Please commit at minimum at the end of each milestone with a clear commit message such as "Milestone #X Complete". You are encouraged to commit more often, but do not have to. Write your solutions as if it would be the final code that would occur in a production setting. Proper organization, proper comments and explanations, etc. 
+You have 50 minutes to work on this. This challenge has three milestones. The first is to implement a basic hash table. It is basic in the sense that it does not need to adaptively resize to the number of elements in the hashtable. The second is to extend this implementation to support resizing using any O(1) amortized method. The third milestone will be discussed afterwards. Please commit at minimum at the end of each milestone with a clear commit message such as "Milestone #X Complete". You are encouraged to commit more often, but do not have to. Write your solutions as if it would be the final code that would occur in a production setting. Proper organization, proper comments and explanations, etc. 
 
 To keep things a little simpler, both the keys and the values of the hashtable are standard C99 `int`. 
 
@@ -37,7 +39,7 @@ This file benchmarks your implementation. You should not make significant change
 
 ##### Makefile
 
-This is a GNU Makefile. You should not need to edit this. To compile everything you can run `make` in your command line. If you decide to tackle this challenge on Windows, you will need to make your own Makefile. We suggest following the same format this one, and compiling with `nmake` (assuming you have Visual Studio Desktop Development SDK).
+This is a GNU Makefile. You should not need to edit this. To compile everything you can run `make main`, `make test`, or `make benchmark`, in your command line. If you're using Windows, you can use WSL. Otherwise, don't worry about compiling it.
 
 ### Milestone 1
 
@@ -53,11 +55,11 @@ Will be discussed after the coding portion.
 
 ## How You Will Be Assessed
 
-For milestone 1 we are looking for clean readable code that passes the tests. We want to see your ability to write proficiently in C. For milestone 2 we also want to see clean code. If you are feeling rushed we would rather you spend more time clearly communicating your design than trying to get your code to work.  
-
+For milestone 1 we are looking for clean readable code that passes the tests. We want to see your ability to write proficiently in C. For milestone 2 we also want to see clean code. If you are feeling rushed we would rather you spend more time clearly communicating your design than trying to get your code to work. Your code does not need to compile and work correctly, we will only be reading the code during the assessment. We would rather you implement half of the functions with good, solid, and clean code, than try to get a minimal viable project somewhat working.
 
 ## Once You're Finished
 
 Please DO NOT push to master; instead, branch your code changes and notes into a new branch via ```git branch [BRANCH NAME]``` and ```git checkout [BRANCH NAME]```, and submit your branch via ```git push origin [BRANCH NAME]```.
 
 Have fun--we look forward to seeing your work!
+
