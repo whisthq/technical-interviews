@@ -28,7 +28,7 @@ int* queries;
 // Return the minimum in in the [start, end) range
 // Feel free to change the function headers or add other helper functions
 int min_for_range(){
-    // Fill out your implementation here
+    // TODO: Fill out your implementation here
     return 0;
 }
 
@@ -48,10 +48,9 @@ void evaluate(int count, int query_count){
 }
 
 int main(){
-
     printf("Running tests...\n");
     // use this to fix your seed
-    //srand(12491024);
+    // srand(12491024);
     
     int n = 1000000;
     int q = 10000;
@@ -81,7 +80,6 @@ int main(){
     // Please time your global variable initialization
     clock_gettime(CLOCK_REALTIME, &start);
     // START: Global Variable Initialization
-
 
     // END: Global Variable Initialization
     clock_gettime(CLOCK_REALTIME, &end);
@@ -113,5 +111,4 @@ int main(){
         printf("Failed %d out of %d\n", count, q);
     else
         printf("PASS Correctness\n");
-
 }
