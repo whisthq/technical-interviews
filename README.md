@@ -11,6 +11,7 @@ The associated interview solutions repository is at: https://github.com/fractalc
 - Broken-Stun: Debug computer networking bugs in C
 - Hashtable: Implement a resizeable hashtable in C
 - C-fundamentals: Quick C fundamentals questions to ask on a first screen
+- Perf-engineering: Performance engineer finding the minimum of an array in C
 
 ## Administering a Technical Interview
 
