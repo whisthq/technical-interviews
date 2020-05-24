@@ -6,14 +6,12 @@
 #define MIN(X, Y) (((X) < (Y)) ? (X) : (Y))
 #define MAX(X, Y) (((X) > (Y)) ? (X) : (Y))
 
-
 // Return the minimum in in the [start, end) range
 // Feel free to change the function headers or add other helper functions
 int min_for_range(){
-    // Fill out your implementation here
+    // TODO: Fill out your implementation here
     return 0;
 }
-
 
 // Please do not change this unless you are entirely sure your implementation is correct
 int min_for_range_reference(int* arr, int start_range, int end_range){
@@ -24,19 +22,16 @@ int min_for_range_reference(int* arr, int start_range, int end_range){
     return min;
 }
 
-
 void evaluate(int* arr, int* queries, int* results, int count, int query_count){
     for (int i=0; i<query_count; i++) {
         results[i] = min_for_range_reference(arr, queries[i*2], queries[i*2+1]);
     }
 }
 
-
 int main(){
-
     printf("Running tests...\n");
     // use this to fix your seed
-    //srand(12491024);
+    // srand(12491024);
     
     int n = 1000000;
     int q = 10000;
@@ -62,11 +57,9 @@ int main(){
     start_ref = clock();
     // START: Global Variable Initialization
 
-
     // END: Global Variable Initialization
     double global_time = ((double)(clock() - start_ref))/CLOCKS_PER_SEC;
-
-   
+    
     double min_time = DBL_MAX;
     for (int tries=1; tries>0; tries--){
         clock_t start = clock();
@@ -89,5 +82,4 @@ int main(){
         printf("Failed %d out of %d\n", count, n);
     else
         printf("PASS Correctness\n");
-
 }
