@@ -32,6 +32,7 @@ CWARNINGS := $(WARNINGS) \
 
 # C flags
 CFLAGS := -g -fPIC -std=c99 $(CWARNINGS)
+CFLAGS += $(MACRO_VARS)
 
 # make all objects
 all: clean $(OBJS)

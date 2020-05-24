@@ -6,6 +6,24 @@
 #define MIN(X, Y) (((X) < (Y)) ? (X) : (Y))
 #define MAX(X, Y) (((X) > (Y)) ? (X) : (Y))
 
+// note: to run with macros: `MACRO_VARS='-DREF=0 -DTRIES=3' make; ./main`
+
+// Run the reference or not
+#ifndef REF
+#define REF 1
+#endif
+
+// Number of times to grade (takes min time)
+#ifndef TRIES
+#define TRIES 1
+#endif
+
+// For the purpose of this question and easy parallelization 
+// we are going to just store these as global variables
+int* arr;
+int* results;
+int* expected_results;
+int* queries;
 
 // Return the minimum in in the [start, end) range
 // Feel free to change the function headers or add other helper functions
@@ -14,9 +32,8 @@ int min_for_range(){
     return 0;
 }
 
-
 // Please do not change this unless you are entirely sure your implementation is correct
-int min_for_range_reference(int* arr, int start_range, int end_range){
+int min_for_range_reference(int start_range, int end_range){
     int min = arr[start_range];
     for (int i=start_range; i<end_range; i++){
         min = MIN(arr[i], min);
@@ -24,13 +41,11 @@ int min_for_range_reference(int* arr, int start_range, int end_range){
     return min;
 }
 
-
-void evaluate(int* arr, int* queries, int* results, int count, int query_count){
+void evaluate(int count, int query_count){
     for (int i=0; i<query_count; i++) {
-        results[i] = min_for_range_reference(arr, queries[i*2], queries[i*2+1]);
+        results[i] = min_for_range_reference(queries[i*2], queries[i*2+1]);
     }
 }
-
 
 int main(){
 
@@ -40,10 +55,10 @@ int main(){
     
     int n = 1000000;
     int q = 10000;
-    int* arr = malloc(sizeof(int) * n);
-    int* results = malloc(sizeof(int) * n);
-    int* expected_results = malloc(sizeof(int) * n);
-    int* queries= malloc(sizeof(int) * q * 2);
+    arr = malloc(sizeof(int) * n);
+    results = malloc(sizeof(int) * n);
+    expected_results = malloc(sizeof(int) * n);
+    queries= malloc(sizeof(int) * q * 2);
     for (int i=0; i<n; i++) {
         arr[i] = rand() % (n * 100);
         int q1 = rand() % n;
@@ -52,28 +67,35 @@ int main(){
         queries[i*2+1] = MAX(q1, q2);
     }
 
-    clock_t start_ref = clock();
+    struct timespec start, end;
+    clock_gettime(CLOCK_REALTIME, &start);
+    #if REF
     for (int i=0; i<q; i++)
-        expected_results[i] = min_for_range_reference(arr, queries[i*2], queries[i*2+1]);
-    double reference_time = ((double)(clock() - start_ref))/CLOCKS_PER_SEC;
+        expected_results[i] = min_for_range_reference(queries[i*2], queries[i*2+1]);
+    #endif // REF
+    clock_gettime(CLOCK_REALTIME, &end);
+    double reference_time = (end.tv_sec - start.tv_sec) +(end.tv_nsec - start.tv_nsec) / 1000000000.0;
+
     printf("Reference time: %f s\n", reference_time);
 
     // Please time your global variable initialization
-    start_ref = clock();
+    clock_gettime(CLOCK_REALTIME, &start);
     // START: Global Variable Initialization
 
 
     // END: Global Variable Initialization
-    double global_time = ((double)(clock() - start_ref))/CLOCKS_PER_SEC;
+    clock_gettime(CLOCK_REALTIME, &end);
+    double global_time = (end.tv_sec - start.tv_sec) +(end.tv_nsec - start.tv_nsec) / 1000000000.0;
 
    
     double min_time = DBL_MAX;
-    for (int tries=1; tries>0; tries--){
-        clock_t start = clock();
-        evaluate(arr, queries, results, n, q);
-        clock_t time = clock() - start;
-        if (((double)time/CLOCKS_PER_SEC) + global_time < min_time)
-            min_time = ((double)time/CLOCKS_PER_SEC) + global_time; 
+    for (int tries=TRIES; tries>0; tries--){
+        clock_gettime(CLOCK_REALTIME, &start);
+        evaluate(n, q);
+        clock_gettime(CLOCK_REALTIME, &end);
+        double time = (end.tv_sec - start.tv_sec) +(end.tv_nsec - start.tv_nsec) / 1000000000.0;
+        if (time + global_time < min_time)
+            min_time = time + global_time;
     } 
     printf("Finished in: %f s\n", min_time);
     printf("Approx percent speedup: %f \n", ((reference_time - min_time) / reference_time) * 100);
@@ -81,12 +103,14 @@ int main(){
     
     int count = 0;
     for (int i=0; i<n; i++){
-        if (results[i] != expected_results[i])
+        if (results[i] != expected_results[i]){
+            printf("Failed index: %d, %d != %d\n", i, results[i], expected_results[i]);
             count++;
+        }
     }
 
     if (count>0)
-        printf("Failed %d out of %d\n", count, n);
+        printf("Failed %d out of %d\n", count, q);
     else
         printf("PASS Correctness\n");
 
