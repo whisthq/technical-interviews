@@ -1,6 +1,10 @@
 ## Overview
 
-In this coding challenge, you will be performance engineering a simple search function to find the minimum element in an array. Please fully read this document in its entirety before starting the challenge. 
+In this coding challenge, you will be performance engineering a simple search function to find the minimum element in a series of intervals within a static, unsorted array. Please fully read this document in its entirety before starting the challenge. 
+
+The premise of the problem is very simple. You have a static array of `n` elements. In this question, n is set to be 1 million, but that should not matter much. You are going to be doing `q` querying, here q is set to 10,000. For each querying, you need to find the minimum value within a randomly generated interval. For instance, querying #1 could be [29, 14123], while querying #2 could be [24332, 100000].
+
+You are provided the simple solution, which is to simply iterate over the array at every query. This will take O(n) time to iterate over the array each time. Your task is to improve upon that solution.
 
 ## Getting Started
 
@@ -14,7 +18,7 @@ If you are running a Unix distribution (MacOS or Linux), you can compile the cod
 
 You have 90 minutes to work on this. It is a very open ended problem designed to test your knowledge about the inner workings of low level languages. You are free to try to implement any optimizations you can think of, but generally there are a few categories of optimizations, algorithm optimizations, parallelization, and other optimizations. We understand that sometimes attempted optimizations do not yield any results, so we would also like you to write a doc describing what optimizations you have tried, would have tried given more time, or anything else you believe is important to how you thought about the problem or what you've tried. Different optimizations will take different amounts of time to implement, so be mindful on what you choose to attempt in terms of difficulty of implementation and estimated returns.
 
-Your implementation will be scored on a standard machine with ~8-16 threads.  Pure time is not taken into consideration (given different computers will run at different speeds) and percent improvement is probably the better factor to look at for improvment in speeds on your local machine.
+You will be scored by how much of an improvement you make over the baseline algorithm. Pure time is not taken into consideration (given different computers will run at different speeds) and percent improvement is probably the better factor to look at for improvment in speeds on your local machine.
 
 ### Files
 
