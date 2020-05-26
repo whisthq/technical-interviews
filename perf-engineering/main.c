@@ -20,6 +20,7 @@
 
 // For the purpose of this question and easy parallelization 
 // we are going to just store these as global variables
+#define arr_size 1000000
 int* arr;
 int* results;
 int* expected_results;
@@ -27,7 +28,7 @@ int* queries;
 
 // Return the minimum in in the [start, end) range
 // Feel free to change the function headers or add other helper functions
-int min_for_range(){
+int min_for_range(int start_range, int end_range) {
     // TODO: Fill out your implementation here
     return 0;
 }
@@ -41,29 +42,25 @@ int min_for_range_reference(int start_range, int end_range){
     return min;
 }
 
-void evaluate(int count, int query_count){
-    for (int i=0; i<query_count; i++) {
-        results[i] = min_for_range_reference(queries[i*2], queries[i*2+1]);
-    }
-}
-
 int main(){
     printf("Running tests...\n");
     // use this to fix your seed
     // srand(12491024);
     
-    int n = 1000000;
+    int n = arr_size;
     int q = 10000;
     arr = malloc(sizeof(int) * n);
-    results = malloc(sizeof(int) * n);
-    expected_results = malloc(sizeof(int) * n);
+    results = malloc(sizeof(int) * q);
+    expected_results = malloc(sizeof(int) * q);
     queries= malloc(sizeof(int) * q * 2);
     for (int i=0; i<n; i++) {
         arr[i] = rand() % (n * 100);
+    }
+    for (int i=0; i<q; i++) {
         int q1 = rand() % n;
         int q2 = rand() % n;
         queries[i*2] = MIN(q1, q2);
-        queries[i*2+1] = MAX(q1, q2);
+        queries[i*2+1] = MAX(q1, q2) + 1;
     }
 
     struct timespec start, end;
@@ -89,7 +86,9 @@ int main(){
     double min_time = DBL_MAX;
     for (int tries=TRIES; tries>0; tries--){
         clock_gettime(CLOCK_REALTIME, &start);
-        evaluate(n, q);
+
+        for (int i=0; i<q; i++)
+            results[i] = min_for_range(queries[i*2], queries[i*2+1]);
         clock_gettime(CLOCK_REALTIME, &end);
         double time = (end.tv_sec - start.tv_sec) +(end.tv_nsec - start.tv_nsec) / 1000000000.0;
         if (time + global_time < min_time)
@@ -100,7 +99,7 @@ int main(){
     printf("Checking Correctness...\n");
     
     int count = 0;
-    for (int i=0; i<n; i++){
+    for (int i=0; i<q; i++){
         if (results[i] != expected_results[i]){
             printf("Failed index: %d, %d != %d\n", i, results[i], expected_results[i]);
             count++;
