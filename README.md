@@ -1,7 +1,5 @@
 # Fractal Technical Interviews - Questions
 
-DO NOT DISTRIBUTE
-
 This repository contains the questions to the different technical interview questions that we administer or have administered in the past here at Fractal. Each folders contains one interview question, with its associated readme for directions and where the starter code contains blank statements where the candidate must provide work.
 
 The associated interview solutions repository is at: https://github.com/fractalcomputers/interview-solutions
