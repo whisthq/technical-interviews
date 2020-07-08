@@ -58,10 +58,10 @@ Given these logs, your task is to implement the following features:
 
 3. **Log analytics and plotting** This is where things get interesting. If you open up one of the log files (for instance, https://fractal-protocol-logs.s3.amazonaws.com/CLIENT070820201015.txt), you'll see that each line follows a consistent format (separation using the "|" character), which means that we can load this .txt file into a Python dataframe. In particular, we are interested in the following log events:
 
-a) Latency: if you Ctrl-F the word "latency" in any client log, you'll see that we have latency metrics (in seconds), which measures the user's round-trip network latency.
-b) Avg Decode Time: if you Ctrl-F the phrase "Avg Decode Time" in any client log, you'll see that we have avg decode times (in seconds), which measures how long the client's video decoder takes to decode a single video frame.
-c) Average Encode Time: if you Ctrl-F the phrase "Average Encode Time" in any server log (here's one for reference: https://fractal-protocol-logs.s3.amazonaws.com/SERVER070420202122.txt), you'll see that we have average encode times (in seconds), which measures how long it's taking the server's GPU to encode a single video frame.
-d) Average Encode Size: if you Ctrl-F the phrase "Average Encode Size" in any server log, you'll see that we measure the size of each frame in bytes
+   - Latency: if you Ctrl-F the word "latency" in any client log, you'll see that we have latency metrics (in seconds), which measures the user's round-trip network latency.
+   - Avg Decode Time: if you Ctrl-F the phrase "Avg Decode Time" in any client log, you'll see that we have avg decode times (in seconds), which measures how long the client's video decoder takes to decode a single video frame.
+   - Average Encode Time: if you Ctrl-F the phrase "Average Encode Time" in any server log (here's one for reference: https://fractal-protocol-logs.s3.amazonaws.com/SERVER070420202122.txt), you'll see that we have average encode times (in seconds), which measures how long it's taking the server's GPU to encode a single video frame.
+   - Average Encode Size: if you Ctrl-F the phrase "Average Encode Size" in any server log, you'll see that we measure the size of each frame in bytes
 
 For each log, we want to extract the above values from a log.txt file as a time series, and plot the time series in the dashboard. So, for each entry in our list, we would have 4 time series plots (assuming both client and server logs exist). Note: you'll want to do this server-side by creating a new endpoint in app/blueprints/log_blueprint.py in the server.
 
