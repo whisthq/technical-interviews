@@ -1,0 +1,22 @@
+# Python
+.env*
+env/
+Test-Environment
+*.pyc
+*.py[cod]
+env3.6
+.venv/
+venv/
+__pycache__/
+
+# Heroku
+herokulogs.txtgg
+
+# Vagrant
+.vagrant
+*.box
+ubuntu-bionic-18.04-cloudimg-console.log
+
+# VS Code
+.vscode/*
+.vscode
