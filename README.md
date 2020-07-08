@@ -5,7 +5,14 @@ This repository contains the questions to the different technical interview ques
 The associated interview solutions repository is located [here](https://github.com/fractalcomputers/interview-solutions).
 
 ## List of Available Technical Interview Questions
+
+### Full-Stack
+
 - Shopper: Build a basic website with React/Redux, JS, HTML-CSS, Python
+- Logging-dashboard: Build a (almost) from scratch React application to parse and display Fractal protocol logs
+
+### Systems
+
 - Broken-Stun: Debug computer networking bugs in C
 - Hashtable: Implement a resizeable hashtable in C
 - C-fundamentals: Quick C fundamentals questions to ask on a first screen
