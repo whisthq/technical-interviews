@@ -8,6 +8,8 @@ The purpose of these logs is to allow our engineers to debug, and to extract ins
 
 This project is intentionally very open-ended. As you complete these project, you should pretend that you're a software engineer who has complete autonomy over the design and capabilities of the project, given a certain set of expected features.
 
+Estimated Completion Time: 8 Hours
+
 ### Setting It Up
 
 If you have any problems setting up, please feel free to contact Ming via ming@fractalcomputers.com, or text 617-997-9751 if he doesn't respond within a few minutes.
@@ -18,7 +20,7 @@ If you have any problems setting up, please feel free to contact Ming via ming@f
 
 3. Make sure you have Node.js and npm installed. In your terminal, type `npm i` to install the necessary dependencies. Then, type `npm start`. A browser should automatically open up with the React app running on localhost. (Note: because the server has not been set up yet, React may throw an error. Don't worry about this for now, just proceed to Step #4).
 
-4. Now, let's set up the server (Python Flask) folder. `cd..` out of the client folder, and `cd` into the server folder.
+4. Now, let's set up the server (Python Flask) folder. `cd ..` out of the client folder, and `cd` into the server folder.
 
 5. Make sure that you have Python 3 installed on your computer. To check your current Python version, type `py` or `python` into your terminal, and the version number should appear. If you don't have Python 3, you can download it from the Python website (I would recommend Python 3.6.8, since that's the version that we use to develop this server).
 
@@ -48,7 +50,7 @@ If you open up your console by going to the browser, right clicking, selecting "
 
 **last_updated**: The time that the logs were received.
 
-**version**: An internal version number that helps us keep track of which Github commit the streaming tech is running on.
+**version**: An internal version number that helps us keep track of which GitHub commit the streaming tech is running on.
 
 Given these logs, your task is to implement the following features:
 
