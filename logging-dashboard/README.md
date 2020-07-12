@@ -52,7 +52,7 @@ If you open up your console by going to the browser, right clicking, selecting "
 
 **version**: An internal version number that helps us keep track of which GitHub commit the streaming tech is running on.
 
-Given these logs, your task is to implement the following features:
+Given these logs, your task is to implement the following features in a **single-page dashboard**:
 
 1. **An interface to view the logs**: Build a nice, clean UI where we can scroll through the big list and easily access the server/client logs and view the other fields (connection_id, ip, last_updated, etc.). For example, something really simple would be to build a table where each row of the table is an entry in the list.
 
@@ -74,6 +74,8 @@ For each log, we want to extract the above values from a `log.txt` file as a tim
 6. **Log filtering** We want to be able to search for logs by username. Implement a search bar that lets us find all the logs associated with a particular user (Note: not just the logs that have been loaded into the browser, but all the logs that are stored in the server).
 
 7. **Bonus features** If you've finished Features 1-6, feel free to get creative and think about features that would be useful to a user, like log bookmarking, summary statistics of errors (i.e. across all the logs, which errors are most common?), summary statistics of time series (what is the median of the time series? correlations between number of errors and median network latency?), etc. or anything else that comes to mind. Impress us by thinking outside the box!
+
+We strongly encourage you to think of a clean UI that can convey all of the above information in a single paged dashboard (no multiple tabs or multiple pages!).
 
 ### How You Will Be Assessed
 
