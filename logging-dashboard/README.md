@@ -12,7 +12,7 @@ Estimated Completion Time: 8 Hours
 
 ### Setting It Up
 
-We have provided a bare-boned React app and Python Flask application, which is meant to help you get started. NOTE: If you are familiar with another framework or would like to set up your own client/server, feel free to do so--the setup process below is meant to let you get started as quickly as possible.
+We have provided a barebone React app and Python Flask application, which is meant to help you get started. NOTE: If you are familiar with another framework or would like to set up your own client/server, feel free to do so--the setup process below is meant to let you get started as quickly as possible.
 
 If you have any problems setting up, please feel free to contact Ming via ming@fractalcomputers.com, or text 617-997-9751 if he doesn't respond within a few minutes.
 
