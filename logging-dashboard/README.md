@@ -12,6 +12,8 @@ Estimated Completion Time: 8 Hours
 
 ### Setting It Up
 
+We have provided a barebone React app and Python Flask application, which is meant to help you get started. NOTE: If you are familiar with another framework or would like to set up your own client/server, feel free to do so--the setup process below is meant to let you get started as quickly as possible.
+
 If you have any problems setting up, please feel free to contact Ming via ming@fractalcomputers.com, or text 617-997-9751 if he doesn't respond within a few minutes.
 
 1. `git clone` this repo. You'll see that this repo is divided into two folders: client and server. These two folders are completely separate. The client folder contains all the code of a barebone React app with all the frameworks you'll need already set up for you (Redux, blank React components for you to fill in, etc.). The server folder contains all the code of a barebone Python Flask REST API, with everything already set up for you (file structure, blueprints, etc.). Your task will be to modify these two files with code as you see fit.
@@ -75,7 +77,7 @@ For each log, we want to extract the above values from a `log.txt` file as a tim
 
 7. **Bonus features** If you've finished Features 1-6, feel free to get creative and think about features that would be useful to a user, like log bookmarking, summary statistics of errors (i.e. across all the logs, which errors are most common?), summary statistics of time series (what is the median of the time series? correlations between number of errors and median network latency?), etc. or anything else that comes to mind. Impress us by thinking outside the box!
 
-We strongly encourage you to think of a clean UI that can convey all of the above information in a single paged dashboard (no multiple tabs or multiple pages!).
+We strongly encourage you to think of a clean UI that can convey all of the above information in a **single paged dashboard (no multiple tabs or multiple pages!)**.
 
 ### How You Will Be Assessed
 
