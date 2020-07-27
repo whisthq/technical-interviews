@@ -77,15 +77,17 @@ For each log, we want to extract the above values from a `log.txt` file as a tim
 
 7. **Bonus features** If you've finished Features 1-6, feel free to get creative and think about features that would be useful to a user, like log bookmarking, summary statistics of errors (i.e. across all the logs, which errors are most common?), summary statistics of time series (what is the median of the time series? correlations between number of errors and median network latency?), etc. or anything else that comes to mind. Impress us by thinking outside the box!
 
-We strongly encourage you to think of a clean UI that can convey all of the above information in a **single paged dashboard (no multiple tabs or multiple pages!)**.
+We strongly encourage you to think of a clean UI that can convey all of the above information in a **single paged dashboard (no multiple tabs or multiple pages!)**. For best results, we also strongly recommend using a design/prototyping tool to figure out how you want your dashboard to look before you actually start coding (e.g. Figma, Adobe Illustrator), if you're familiar with such tools.
 
 ### How You Will Be Assessed
 
-You will be assessed on the following four categories:
+The most important criteria we are looking for is a **production-grade** product that shows maturity in both UX design and code design. That is to say--if this were a live product and I were a user seeing what you built for the first time, would I think that this looks more like a trustworthy, well-developed product or a school project? If I were a software engineer looking at your code base for the first time, would I easily be able to read through it? Of course, we don't expect perfection given your limited amount of time, but we are actively looking for signs of mature, thoughtful software engineering.
+
+More specifically, you will be assessed on the following four categories:
 
 1. **Quality of completion** Were all the features implemented, and were they implemented well/without bugs?
 
-2. **Design** We place a strong emphasis on creating beautiful, clean user interfaces. How well was the UI designed? How read-able and easily understandable is the dashboard to a new user?
+2. **Design** We place a strong emphasis on creating beautiful, clean user interfaces. How well was the UI designed? How read-able and easily understandable is the dashboard to a new user? Do I have to spend a lot of time clicking to figure things out or does everything just make sense upon first glance?
 
 3. **Code Design** How readable and organized is the code?
 
@@ -93,7 +95,7 @@ You will be assessed on the following four categories:
 
 ### How To Submit
 
-To submit, simply create your own branch and push to that branch. We expect you to complete this challenge within 8 hours, although we do understand that there can be unexepcted delays in setting up so we will allow for some extra time if needed. After submitting, we will set up a brief phone conversation, where we will discuss your design considerations and show you the actual, internal version of the dashboard that we use.
+To submit, simply create your own branch and push to that branch. We expect you to complete this challenge within 8 hours, although we do understand that there can be unexepected delays in setting up so we will allow for some extra time if needed. After submitting, we may set up a brief phone conversation, where we will discuss your design considerations and show you the actual, internal version of the dashboard that we use.
 
 ### Final Thoughts
 
