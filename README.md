@@ -20,7 +20,7 @@ The associated interview solutions repository is located [here](https://github.c
 
 ## Administering a Technical Interview
 
-When administering a technical interview, please select the question you want from this repository, add it to a brand new, private Fractal repository, and give access to the candidate. Make sure to remove access at the end of the interview period, and to delete the temporary repository once the interview notes have been collected and compiled. You should collect interview notes in the Notion, under `Interview Notes` shared workspace. If you don't have access to this shared workspace, you should contact Phil.
+When administering a technical interview, please select the question you want from this repository, add it to a brand new, private Fractal repository, and give access to the candidate. Make sure to remove access at the end of the interview period, and to delete the temporary repository once the interview notes have been collected and compiled. You should collect interview notes in the Notion, under the `Interview Notes` shared workspace. If you don't have access to this shared workspace, you should contact Phil.
 
 ## Creating a Technical Interview Question
 
