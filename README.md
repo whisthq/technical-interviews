@@ -4,7 +4,7 @@ This repository contains the questions to the different technical interview ques
 
 The associated interview solutions repository is located [here](https://github.com/fractalcomputers/interview-solutions).
 
-## List of Available Technical Interview Questions
+## List of Available Technical Interview Questions 
 
 ### Full-Stack
 
