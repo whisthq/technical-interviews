@@ -3,7 +3,19 @@
 Overview
 
 
-In this coding challenge, you will be providing an API for storing, tracking down, and manipulating .wav files.  THis challenge is relatively open-ended,
+In this coding challenge, you will be providing an API for storing, tracking down, and manipulating .wav files.
+
+Your overall task is to design an API and backing database to support the following user stories, centered around a service providing a public library of sound files:
+
+1)  A user saves a wav file to the database for later retrieval.
+
+2)  A user sees what wav files are available.
+
+3) A user downloads a wav file.
+
+4)  MILESTONE 2:  A user has a bad/spotty connection, and downloads the wav file in parts.
+
+This challenge is relatively open-ended,
 and tests both your ability to interface with unfamiliar APIs as well as your knowledge of events up and down the tech stack.
 
 In particular, what is expected at the end of the challenge is a set of API endpoints, that run on localhost, which handle storing, retrieving, and searching through wav files.  You may find python's wav library helpful.
@@ -14,7 +26,7 @@ Unit tests are optional, integration tests are optional but recommended.
 Getting Started
 
 
-Git clone this repository, and cd into the handle-wav folder.  We recommend you use flask as your web framework.
+Git clone this repository, and cd into the handle-wav folder.  We recommend you use flask as your web framework.  A sample wav file has been provided for testing.
 
 Technical Details
 
