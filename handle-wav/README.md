@@ -3,7 +3,7 @@
 Overview
 
 
-In this coding challenge, you will be providing an API for storing, tracking down, and manipulating .wav files.
+In this coding challenge, you will be providing a python API for storing, tracking down, and manipulating .wav files.
 
 Your overall task is to design an API and backing database to support the following user stories, centered around a service providing a public library of sound files:
 
