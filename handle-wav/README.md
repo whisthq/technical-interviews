@@ -1,6 +1,4 @@
-# Handle WAV
-
-## Context
+# Overview
 
 In this coding challenge, you will be creating a Python API for storing, tracking, and manipulating `.wav` files. Your overall task is to design an API and backing database to support the following user stories, centered around a service providing a public library of sound files:
 
