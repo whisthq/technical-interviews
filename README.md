@@ -10,6 +10,7 @@ The associated interview solutions repository is located [here](https://github.c
 
 - Shopper: Build a basic website with React/Redux, JS, HTML-CSS, Python
 - Logging-dashboard: Build a React application (almost) from scratch to parse and display Fractal protocol logs
+- Handle-wav: Build a Python web backend to process `.wav` files.
 
 ### Systems
 

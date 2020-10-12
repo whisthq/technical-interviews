@@ -1,4 +1,4 @@
-## Overview
+# Overview
 
 In this coding challenge, you will be creating a simple grocery-list web app called Shopper. With Shopper, users can manually enter and store the grocery items that they want to purchase, label grocery items (e.g. "bought"), or delete items from their grocery list.
 
@@ -34,7 +34,7 @@ If you finish early, feel free to add extra features that you think would improv
 1. Add a "quantity" field for each grocery item.
 2. Redux states disappear if you clear the browser cookies. A database is a better way to store grocery items, if you can spin up a backend quickly. API calls should be handled in `sagas/index.js`.
 
-## Once You're Finished
+## How to Submit
 
 Please DO NOT push to `master`; instead, branch your changes into a new branch via ```git branch [BRANCH NAME]``` and ```git checkout [BRANCH NAME]```, and submit your branch via ```git push origin [BRANCH NAME]```, followed by a detailed PR to `master`.
 
