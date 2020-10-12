@@ -18,7 +18,7 @@ Git clone this repository, and cd into the handle-wav folder. We recommend you u
 
 ## Technical Details
 
-You have 90 minutes to work on this, and there are two potential milestones (the second is briefly outlined above and will be further explained after you finish the first). It is an open-ended problem, but here are some suggested routes and semantics to work with (not required, just suggested). 
+You have 3 hours to work on this, and there are two potential milestones (the second is briefly outlined above and will be further explained after you finish the first). It is an open-ended problem, but here are some suggested routes and semantics to work with (not required, just suggested). 
 
 Additionally, this is a system design/API design question as much as it is a code one -- talk to us while you're building! Note that some equivalent of `/post` and `/download` are required, as is some variant of `/list`.  
 
