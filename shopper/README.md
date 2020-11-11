@@ -38,4 +38,4 @@ If you finish early, feel free to add extra features that you think would improv
 
 Please DO NOT push to `master`; instead, branch your changes into a new branch via ```git branch [BRANCH NAME]``` and ```git checkout [BRANCH NAME]```, and submit your branch via ```git push origin [BRANCH NAME]```, followed by a detailed PR to `master`.
 
-Have fun--we look forward to seeing your work!
+Have fun - we look forward to seeing your work!

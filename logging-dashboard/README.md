@@ -99,4 +99,4 @@ To submit, simply create your own branch and push to that branch. We expect you 
 
 ## Final Thoughts
 
-Technical assessments aside, the goal of this project is for you to have fun implementing a full React app and server (almost) from scratch! Please be as creative as you'd like, and enjoy :)
+Technical assessments aside, the goal of this project is for you to have fun implementing a full React app and server (almost) from scratch! Please be as creative as you'd like, and enjoy! :)
