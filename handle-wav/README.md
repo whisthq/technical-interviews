@@ -48,6 +48,6 @@ More specifically, you will be assessed on the following three categories:
 
 ## How To Submit
 
-To submit, simply create your own branch and push to that branch. We expect you to complete this challenge within 8 hours, although we do understand that there can be unexepected delays in setting up so we will allow for some extra time if needed. After submitting, we may set up a brief phone conversation, where we will discuss your design considerations and show you the actual, internal version of the dashboard that we use.
+To submit, simply create your own branch and push to that branch. We expect you to complete this challenge within 2 hours, although we do understand that there can be unexepected delays in setting up so we will allow for some extra time if needed. After submitting, we may set up a brief phone conversation, where we will discuss your design considerations and show you the actual, internal version of the dashboard that we use.
 
 Have fun - we look forward to seeing your work!
