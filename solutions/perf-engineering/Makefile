@@ -34,7 +34,6 @@ CWARNINGS := $(WARNINGS) \
 CFLAGS := -g -fPIC -std=c99 $(CWARNINGS)
 CFLAGS += $(MACRO_VARS)
 
-
 # make all objects
 all: clean $(OBJS)
 	$(CC) $(CXXFLAGS) -o $(BIN_NAME) $(OBJS)
