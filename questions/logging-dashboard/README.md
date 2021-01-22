@@ -8,7 +8,7 @@ The purpose of these logs is to allow our engineers to debug, and to extract ins
 
 This project is intentionally very open-ended. As you complete this project, you should pretend that you are a software engineer who has complete autonomy over the design and capabilities of the project, given a certain set of expected features.
 
-Estimated Completion Time: 8 Hours
+Estimated Completion Time: 6 Hours
 
 ## Setting It Up
 
@@ -69,13 +69,9 @@ Given these logs, your task is to implement the following features in a **single
 
 For each log, we want to extract the above values from a `log.txt` file as a time series, and plot the time series in the dashboard. So, for each entry in our list, we would have 4 time series plots (assuming both client and server logs exist). Note: you'll want to do this server-side by creating a new endpoint in `app/blueprints/log_blueprint.py` in the server.
 
-4. **Handling missing information** You'll notice that for some entries in the list, the client or server logs are missing. We want to be able to handle this in the UI, to let the user know that a certain `log.txt` file is missing.
+4. **Log filtering** We want to be able to search for logs by username. Implement a search bar that lets us find all the logs associated with a particular user (Note: not just the logs that have been loaded into the browser, but all the logs that are stored in the server).
 
-5. **Logging errors** If you open up any log files, you'll see that each line comes with a status code of INFO, WARNING, or ERROR. For each log file, we are interested in how many ERRORs and WARNINGs there are, both in absolute terms and as a percentage of total lines in the log file. Note: you'll want to do this server-side by creating a new endpoint in `app/blueprints/log_blueprint.py` in the server, or appending more code to your endpoint in part #3.
-
-6. **Log filtering** We want to be able to search for logs by username. Implement a search bar that lets us find all the logs associated with a particular user (Note: not just the logs that have been loaded into the browser, but all the logs that are stored in the server).
-
-7. **Bonus features** If you've finished Features 1-6, feel free to get creative and think about features that would be useful to a user, like log bookmarking, summary statistics of errors (i.e. across all the logs, which errors are most common?), summary statistics of time series (what is the median of the time series? correlations between number of errors and median network latency?), etc. or anything else that comes to mind. Impress us by thinking outside the box!
+5. **Bonus features** If you've finished Features 1-6, feel free to get creative and think about features that would be useful to a user, like log bookmarking, summary statistics, etc. Impress us by thinking outside the box!
 
 We strongly encourage you to think of a clean UI that can convey all of the above information in a **single paged dashboard (no multiple tabs or multiple pages!)**. For best results, we also strongly recommend using a design/prototyping tool to figure out how you want your dashboard to look before you actually start coding (e.g. Figma, Adobe Illustrator), if you're familiar with such tools.
 
