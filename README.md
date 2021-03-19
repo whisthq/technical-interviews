@@ -9,7 +9,7 @@ This repository contains the questions and solutions to the different technical 
 - Shopper: Build a basic website with React/Redux, JS, HTML-CSS, Python
 - Logging-dashboard: Build a React application (almost) from scratch to parse and display Fractal protocol logs
 - Handle-wav: Build a Python web backend to process `.wav` files
-- Sample-async:  Build a python library to handle asynchronous workflows
+- Sample-async: Build a Python library to handle asynchronous workflows
 
 ### Systems
 
