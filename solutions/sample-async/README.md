@@ -1,3 +1,7 @@
+# Solutions
+
+### General Strategies
+
 Here's a sample architecture for what a solution to this problem looks like:
 
 Have a baseline object which maintains an internal list of tasks/mapping from IDs to tasks, and a separate mapping from
