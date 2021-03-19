@@ -33,7 +33,7 @@ not required, just suggested).
 
 Look into the threading module!  It's a great first step for async execution.
 
-Consider how to distinguish blocking and polling tasks, since you'll need to handle them differently. You may what
+Consider how to distinguish blocking and polling tasks, since you'll need to handle them differently. You may want
 thread.is_alive, if you're using threads.
 
 Think about how you can most effectively check into the status of your running tasks (how often should you be checking
