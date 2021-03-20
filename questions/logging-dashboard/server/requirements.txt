@@ -127,7 +127,7 @@ importlib-metadata==0.23
 ipaddress==1.0.23
 isodate==0.6.0
 itsdangerous==1.1.0
-Jinja2==2.10.1
+Jinja2==2.11.3
 jmespath==0.9.5
 kombu==4.6.8
 Mako==1.1.0
