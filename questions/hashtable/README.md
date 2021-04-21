@@ -61,6 +61,6 @@ For milestone 1 we are looking for clean readable code that passes the tests. We
 
 ## Once You're Finished
 
-Please DO NOT push to master; instead, branch your code changes and notes into a new branch via ```git branch [BRANCH NAME]``` and ```git checkout [BRANCH NAME]```, and submit your branch via ```git push origin [BRANCH NAME]```.
+To submit, simply create your own branch and push to that branch.
 
-Have fun--we look forward to seeing your work!
+Have fun - we look forward to seeing your work!

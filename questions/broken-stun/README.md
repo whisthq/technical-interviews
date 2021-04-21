@@ -18,8 +18,6 @@ You will be assessed on the quality and accuracy of your comments, and on the en
 
 ## Once You're Finished
 
-Please DO NOT push to master; instead, branch your code changes and notes into a new branch via ```git branch [BRANCH NAME]``` and ```git checkout [BRANCH NAME]```, and submit your branch via ```git push origin [BRANCH NAME]```.
-
-You can push bugs that you find, but you don't have to. You can leave all of your notes in the google doc if you so wish. If you have extra time, feel free to branch off and actually push your changes.
+To submit, simply create your own branch and push to that branch. You can push bugs that you find, but you don't have to. You can leave all of your notes in the google doc if you so wish. If you have extra time, feel free to branch off and actually push your changes.
 
 Have fun - we look forward to seeing your work!

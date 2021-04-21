@@ -36,6 +36,6 @@ As this is a very open-ended problem, we would love to see how you approach it a
 
 ## Once You're Finished
 
-Please DO NOT push to master; instead, branch your code changes and notes into a new branch via ```git branch [BRANCH NAME]``` and ```git checkout [BRANCH NAME]```, and submit your branch via ```git push origin [BRANCH NAME]```.
+To submit, simply create your own branch and push to that branch.
 
 Have fun - we look forward to seeing your work!
