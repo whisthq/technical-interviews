@@ -14,7 +14,7 @@ Estimated Completion Time: 6 Hours
 
 We have provided a barebone React app and Python Flask application, which is meant to help you get started. NOTE: If you are familiar with another framework or would like to set up your own client/server, feel free to do so--the setup process below is meant to let you get started as quickly as possible.
 
-If you have any problems setting up, please feel free to contact Ming via ming@fractalcomputers.com, or text 617-997-9751 if he doesn't respond within a few minutes.
+If you have any problems setting up, please feel free to contact Ming via ming@fractal.co, or text 617-997-9751 if he doesn't respond within a few minutes.
 
 1. `git clone` this repo. You'll see that this repo is divided into two folders: client and server. These two folders are completely separate. The client folder contains all the code of a barebone React app with all the frameworks you'll need already set up for you (Redux, blank React components for you to fill in, etc.). The server folder contains all the code of a barebone Python Flask REST API, with everything already set up for you (file structure, blueprints, etc.). Your task will be to modify these two files with code as you see fit.
 
