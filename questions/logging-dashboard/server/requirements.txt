@@ -89,7 +89,7 @@ azure-storage-common==1.4.2
 azure-storage-file==1.4.0
 azure-storage-nspkg==3.1.0
 azure-storage-queue==1.4.0
-Babel==2.7.0
+Babel==2.9.1
 backports-abc==0.5
 billiard==3.6.3.0
 black==19.10b0
