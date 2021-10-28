@@ -49,7 +49,7 @@ In this milestone you will implement a static hashtable. It is static in the sen
 
 ### Milestone 2
 
-In this milestone you will modify your code from milestone 1 so that the hashtable is dynamically resized as it fills up. The hash table should be made larger as more elements are inserted. You do not need to decrease the size of the hashtable if elements are removed. You are allowed to use external resources to figure out a good policy for when to resize. Please provide links to any resources you use. The resizing should be automatic; the user should not need to call a function to resize the hashtable. Your solution must run in O(1) time amortized, and that is the only requirement for the algorithm itself. 
+In this milestone you will modify your code from milestone 1 so that the hashtable is dynamically resized as it fills up. The hash table should be made larger as more elements are inserted. You do not need to decrease the size of the hashtable if elements are removed. You are allowed to use external resources to figure out a good policy for when to resize. Please provide links to any resources you use. The resizing should be automatic; the user should not need to call a function to resize the hashtable. Your solution must run in O(1) time amortized, and that is the only requirement for the algorithm itself. Additionally, an explanation of why it is O(1) amortized is desired.
 
 ### Milestone 3
 
