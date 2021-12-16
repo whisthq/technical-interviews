@@ -4,9 +4,8 @@ This repository contains the questions and solutions to the different technical 
 
 ## List of Available Technical Interviews
 
-### Full-Stack
+### Backend
 
-- Logging-dashboard: Build a React application (almost) from scratch to parse and display Whist protocol logs
 - Handle-wav: Build a Python web backend to process `.wav` files
 - Sample-async: Build a Python library to handle asynchronous workflows
 
