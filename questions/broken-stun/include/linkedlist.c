@@ -3,7 +3,7 @@
  * used by the hole punching server to keep track of incoming peer requests for
  * pairing with a VM.
  *
- * Copyright Fractal Computers, Inc. 2019
+ * Copyright Whist Technologies, Inc. 2019
 **/
 
 #include "linkedlist.h" // header file for this file

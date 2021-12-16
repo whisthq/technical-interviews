@@ -2,7 +2,7 @@
  * This file creates a server that connects two clients through UDP hole punching.
  * This hole punching server is built to run on AWS Lightsail with Ubuntu 18.04.
  *
- * Copyright Fractal Computers, Inc. 2019
+ * Copyright Whist Technologies, Inc. 2019
 **/
 
 #include <unistd.h>
@@ -18,7 +18,7 @@
 #include "include/linkedlist.h" // header file for the linked list functions
 
 #define BUFLEN 512 // len of receive buffer
-#define HOLEPUNCH_PORT 48800 // Fractal default holepunch port
+#define HOLEPUNCH_PORT 48800 // Whist default holepunch port
 #define MAX_QUEUE_LEN 100 // arbitrary, maximum concurrent pairing requests waiting
 
 // a small struct to hold a UDP client endpoint, pair struct in linkedlist.h

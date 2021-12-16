@@ -3,7 +3,7 @@
  * Ubuntu, specifically UDP sockets, that are used by the hole punching server
  * to communicate with the peers.
  *
- * Copyright Fractal Computers, Inc. 2019
+ * Copyright Whist Technologies, Inc. 2019
 **/
 
 #include <stdint.h>
